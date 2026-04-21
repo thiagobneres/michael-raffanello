@@ -287,8 +287,33 @@
   </div>
 </footer>
 
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+  <img id="lightbox-img" src="" alt="" onclick="event.stopPropagation()" />
+</div>
+
 <script>
   function toggleMenu() { document.getElementById('navMobile').classList.toggle('open'); }
+
+  document.querySelectorAll('.project-image').forEach(el => {
+    el.addEventListener('click', () => {
+      const src = el.querySelector('img').src;
+      const alt = el.querySelector('img').alt;
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox-img').alt = alt;
+      document.getElementById('lightbox').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeLightbox();
+  });
 </script>
 </body>
 </html>
