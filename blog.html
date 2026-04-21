@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Michael Raffanello</title>
+  <meta name="description" content="Insights on digital marketing, campaign strategy, and industry trends." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="blue-sq"></span>
+        <span>Michael<br>Raffanello</span>
+        <span class="tagline">/ Digital Marketer</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blog.html" class="active">Blogs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Open menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav-mobile" id="navMobile">
+    <a href="index.html" onclick="toggleMenu()">About Me</a>
+    <a href="resume.html" onclick="toggleMenu()">Resume</a>
+    <a href="projects.html" onclick="toggleMenu()">Projects</a>
+    <a href="blog.html" class="active" onclick="toggleMenu()">Blogs</a>
+    <a href="contact.html" onclick="toggleMenu()">Contact</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <h1 class="fade-up"><span class="blue-sq"></span> All Posts</h1>
+      <p class="fade-up" style="animation-delay:0.1s">Thoughts on digital marketing, campaign strategy, and lessons from the field.</p>
+    </div>
+  </div>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="blog-grid">
+
+          <!-- POST 1 -->
+          <a href="blog-post.html" class="blog-card fade-up">
+            <div class="blog-card-img">
+              <img
+                src="https://static.wixstatic.com/media/3291a4_5e1413ab1fc04370a621228ee1bcd961~mv2.png/v1/fill/w_800,h_450,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/3291a4_5e1413ab1fc04370a621228ee1bcd961~mv2.png"
+                alt="Case Study: Driving Event Growth for Support Ontario Youth"
+                loading="lazy"
+              />
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-meta">
+                <span>Michael Raffanello</span>
+                <span class="dot">·</span>
+                <span>Apr 10, 2025</span>
+                <span class="dot">·</span>
+                <span>2 min read</span>
+              </div>
+              <div class="blog-card-title">Case Study: Driving Event Growth for Support Ontario Youth &amp; Tools in the Trades Boot Camp</div>
+              <p class="blog-card-excerpt">When I started working with Support Ontario Youth and the Tools in the Trades Boot Camp, the main challenge was clear: consistently fill events.</p>
+              <span class="blog-read-more">Read more →</span>
+            </div>
+          </a>
+
+          <!-- Placeholder for future posts -->
+          <!-- Add more blog-card elements here as Michael writes new posts -->
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-brand">Michael Raffanello</div>
+          <div class="footer-sub">Digital Marketing Specialist · Brantford, ON</div>
+        </div>
+        <div class="footer-contacts">
+          <a href="tel:6475541726">647-554-1726</a>
+          <a href="mailto:michaeljraffanello@gmail.com">michaeljraffanello@gmail.com</a>
+          <a href="https://www.linkedin.com/in/michaelraffanello/" target="_blank" rel="noopener" class="footer-linkedin">
+            <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 Michael Raffanello. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navMobile').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

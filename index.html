@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Michael Raffanello — Digital Marketer</title>
+  <meta name="description" content="Digital Marketing Specialist with 5+ years helping brands grow through smart strategy and strong execution." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="blue-sq"></span>
+        <span>Michael<br>Raffanello</span>
+        <span class="tagline">/ Digital Marketer</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">About Me</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blog.html">Blogs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Open menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav-mobile" id="navMobile">
+    <a href="index.html" class="active" onclick="toggleMenu()">About Me</a>
+    <a href="resume.html" onclick="toggleMenu()">Resume</a>
+    <a href="projects.html" onclick="toggleMenu()">Projects</a>
+    <a href="blog.html" onclick="toggleMenu()">Blogs</a>
+    <a href="contact.html" onclick="toggleMenu()">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <main>
+    <div class="container">
+      <div class="hero">
+
+        <!-- CARD -->
+        <div class="hero-card fade-up">
+          <img
+            src="https://static.wixstatic.com/media/3291a4_d5fa94227c5a493aa4a1f2c52c4b5e12~mv2.png/v1/fill/w_400,h_400,al_c,q_85,enc_avif,quality_auto/1776298728130.png"
+            alt="Michael Raffanello"
+            class="hero-photo"
+          />
+          <div>
+            <div class="hero-card-name">Michael Raffanello</div>
+            <div class="hero-card-rule"></div>
+            <div class="hero-card-title" style="margin-top:0.6rem;">Digital Marketing Specialist</div>
+            <div class="hero-card-linkedin" style="margin-top:0.75rem;">
+              <a href="https://www.linkedin.com/in/michaelraffanello/" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CONTENT -->
+        <div class="hero-content">
+          <div class="fade-up" style="animation-delay:0.1s">
+            <h1>Welcome</h1>
+            <p class="tagline">Discover my journey in Digital Marketing</p>
+          </div>
+          <div class="hero-actions fade-up" style="animation-delay:0.18s">
+            <a href="resume.html" class="btn btn-primary">View Resume</a>
+            <a href="projects.html" class="btn btn-outline">See My Work</a>
+          </div>
+          <p class="hero-bio fade-up" style="animation-delay:0.24s">
+            I'm a Digital Marketing Specialist with a background in Account Management, focused on helping brands grow through smart strategy and strong execution. I've worked closely with clients across different industries, turning business goals into effective digital campaigns — including social media, content, and performance marketing. This portfolio highlights the work I've been part of and how I approach marketing with both a strategic and client-focused mindset.
+          </p>
+          <div class="hero-testimonial fade-up" style="animation-delay:0.3s">
+            <blockquote>
+              "Michael is a true digital marketing expert, with a deep understanding of executing campaigns and delivering impressive results."
+            </blockquote>
+            <cite>— Julia Dos Santos, Sales &amp; Marketing Associate, Trudell Medical International</cite>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-brand">Michael Raffanello</div>
+          <div class="footer-sub">Digital Marketing Specialist · Brantford, ON</div>
+        </div>
+        <div class="footer-contacts">
+          <a href="tel:6475541726">647-554-1726</a>
+          <a href="mailto:michaeljraffanello@gmail.com">michaeljraffanello@gmail.com</a>
+          <a href="https://www.linkedin.com/in/michaelraffanello/" target="_blank" rel="noopener" class="footer-linkedin">
+            <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 Michael Raffanello. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navMobile').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
