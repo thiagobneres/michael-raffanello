@@ -9,336 +9,286 @@
 </head>
 <body>
 
-  <!-- NAV -->
-  <nav>
-    <div class="container nav-inner">
-      <a href="index.html" class="nav-logo">
-        <span class="blue-sq"></span>
-        <span>Michael<br>Raffanello</span>
-        <span class="tagline">/ Digital Marketer</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="index.html">About Me</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="projects.html" class="active">Projects</a></li>
-        <li><a href="blog.html">Blogs</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <button class="nav-toggle" aria-label="Open menu" onclick="toggleMenu()">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
-  <div class="nav-mobile" id="navMobile">
-    <a href="index.html" onclick="toggleMenu()">About Me</a>
-    <a href="resume.html" onclick="toggleMenu()">Resume</a>
-    <a href="projects.html" class="active" onclick="toggleMenu()">Projects</a>
-    <a href="blog.html" onclick="toggleMenu()">Blogs</a>
-    <a href="contact.html" onclick="toggleMenu()">Contact</a>
+<nav>
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">
+      <span class="blue-sq"></span>
+      <span class="nav-logo-text">Michael<br>Raffanello</span>
+      <span class="nav-tagline">/ Digital Marketer</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">About Me</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="blog.html">Blogs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Open menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
   </div>
+</nav>
+<div class="nav-mobile" id="navMobile">
+  <a href="index.html" onclick="toggleMenu()">About Me</a>
+  <a href="resume.html" onclick="toggleMenu()">Resume</a>
+  <a href="projects.html" class="active" onclick="toggleMenu()">Projects</a>
+  <a href="blog.html" onclick="toggleMenu()">Blogs</a>
+  <a href="contact.html" onclick="toggleMenu()">Contact</a>
+</div>
 
-  <!-- PAGE HERO -->
-  <div class="page-hero">
-    <div class="container">
-      <h1 class="fade-up"><span class="blue-sq"></span> My Work</h1>
-      <p class="fade-up" style="animation-delay:0.1s">A collection of campaigns, strategies, and projects built over 5+ years in digital marketing. Covering paid media, SEO, content creation, and analytics.</p>
-    </div>
+<div class="page-hero">
+  <div class="container">
+    <h1 class="page-hero-title fade-up-item"><span class="blue-sq"></span> My Work</h1>
+    <p class="fade-up-item" style="animation-delay:0.08s">A collection of campaigns, strategies, and projects built over 5+ years in digital marketing. Covering paid media, SEO, content creation, and analytics.</p>
   </div>
+</div>
 
-  <main>
-    <section>
-      <div class="container">
-        <div class="projects-grid">
-
-          <!-- 1: Support Ontario Youth -->
-          <div class="project-card fade-up">
-            <div class="project-body">
-              <span class="project-industry">Non-Profit · Skilled Trades &amp; Workforce Development</span>
-              <div class="project-title">Support Ontario Youth &amp; Tools in the Trades Boot Camp</div>
-              <span class="project-section-label">Scope of Work</span>
-              <ul>
-                <li>Led development and execution of annual marketing strategy aligned with program enrollment goals.</li>
-                <li>Directed social media strategy and community engagement.</li>
-                <li>Partnered with paid influencers to create buzz-worthy content for social media.</li>
-                <li>Built and managed multi-channel media plans (Google, Meta, TV, Radio, Print, OOH).</li>
-                <li>Coordinated content creation (on-site filming and external videographers).</li>
-                <li>Wrote press releases and campaign messaging for events and initiatives.</li>
-                <li>Briefed and directed a 30-second TV campaign from concept through production, including budget management and vendor coordination.</li>
-                <li>Negotiated and managed media buys with Rogers, Bell, and Corus.</li>
-                <li>Implemented tracking strategy using Google Tag Manager (GTM).</li>
-                <li>Owned performance reporting and optimization across all channels.</li>
-              </ul>
-              <span class="project-section-label project-results">Key Results</span>
-              <ul class="project-results">
-                <li>Consistently filled Boot Camp programs through strategic campaign execution.</li>
-                <li>Increased social engagement by 20% through video-led content strategy.</li>
-                <li>Achieved $0.50 CPC on Meta campaigns, outperforming typical non-profit benchmarks.</li>
-                <li>Delivered strong reach and awareness across TV and radio campaigns.</li>
-              </ul>
-            </div>
-            <div class="project-image">
-              <img
-                src="https://static.wixstatic.com/media/3291a4_de54f80acd02413ea6bfa853f88b2307~mv2.jpg/v1/crop/x_2,y_0,w_1076,h_1350/fill/w_560,h_700,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/500816814_1116330537202640_4588127307296552235_n.jpg"
-                alt="Support Ontario Youth"
-                loading="lazy"
-              />
-            </div>
-          </div>
-
-          <!-- 2: RS Breakers -->
-          <div class="project-card fade-up">
-            <div class="project-body">
-              <span class="project-industry">Electrical Distribution</span>
-              <div class="project-title">RS Breakers and Controls</div>
-              <span class="project-section-label">Scope of Work</span>
-              <ul>
-                <li>Led trade show strategy, planning, and vendor coordination.</li>
-                <li>Briefed and managed design of booth, catalogues (print/digital), and branded assets.</li>
-                <li>Oversaw monthly email marketing and social media strategy.</li>
-                <li>Wrote and scripted TV campaign; supported production and managed media buying.</li>
-                <li>Managed reporting and campaign performance.</li>
-              </ul>
-              <span class="project-section-label project-results">Key Results</span>
-              <ul class="project-results">
-                <li>Achieved ~35% email open rates.</li>
-                <li>Increased LinkedIn engagement and brand visibility by 20%.</li>
-                <li>Improved trade show lead generation by introducing structured sales talk tracks and digital lead capture (iPads).</li>
-                <li>Delivered a high-impact TV campaign that strengthened brand visibility.</li>
-              </ul>
-            </div>
-            <div class="project-image">
-              <img
-                src="https://static.wixstatic.com/media/3291a4_86a7353f69db48c29da1ddcde7f5b83a~mv2.png/v1/crop/x_0,y_29,w_1024,h_1431/fill/w_560,h_700,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/86d7022a-aed0-4459-a5fa-314e20262cdb.png"
-                alt="RS Breakers and Controls"
-                loading="lazy"
-              />
-            </div>
-          </div>
-
-          <!-- 3: Northern Cables -->
-          <div class="project-card fade-up">
-            <div class="project-body">
-              <span class="project-industry">Manufacturing &amp; Industrial Supply</span>
-              <div class="project-title">Northern Cables</div>
-              <span class="project-section-label">Scope of Work</span>
-              <ul>
-                <li>Led social media and email marketing strategy.</li>
-                <li>Planned and coordinated trade show and print initiatives.</li>
-                <li>Managed vendor relationships (Kerwill, Electrical Business Magazine, Wesco) to position products with target buyers.</li>
-                <li>Directed Canadian Made and Clean Aluminum campaigns.</li>
-                <li>Oversaw production of educational video content supporting customer portal adoption.</li>
-              </ul>
-              <span class="project-section-label project-results">Key Results</span>
-              <ul class="project-results">
-                <li>Increased LinkedIn engagement by 30% through targeted content strategy.</li>
-                <li>Achieved ~35% email open rates.</li>
-                <li>Surpassed industry benchmarks on the Clean Aluminum campaign using LoKnow's RainBarrel targeting.</li>
-              </ul>
-            </div>
-            <div class="project-image">
-              <img
-                src="https://static.wixstatic.com/media/3291a4_9063c298f98a4010aca5bab2d7482386~mv2.jpeg/v1/crop/x_1,y_0,w_797,h_1000/fill/w_560,h_700,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/1776360605504.jpeg"
-                alt="Northern Cables"
-                loading="lazy"
-              />
-            </div>
-          </div>
-
-          <!-- 4: Halo Car Wash -->
-          <div class="project-card fade-up">
-            <div class="project-body">
-              <span class="project-industry">Automotive Service</span>
-              <div class="project-title">Halo Car Wash</div>
-              <span class="project-section-label">Scope of Work</span>
-              <ul>
-                <li>Led social media strategy and coordinated content execution across Instagram, Facebook, Google My Business, and LinkedIn.</li>
-                <li>Developed strategy and copy for a 10-email automated onboarding campaign in Mailchimp, including promotional offers and review-driving flows.</li>
-                <li>Collaborated with design team on in-store print materials promoting memberships, seasonal offers, and product campaigns.</li>
-                <li>Managed website updates, including membership flows, UX improvements, and content.</li>
-              </ul>
-              <span class="project-section-label project-results">Key Results</span>
-              <ul class="project-results">
-                <li>Achieved 30–45% email open rates across campaigns.</li>
-                <li>Increased Instagram following by 20%.</li>
-                <li>Grew website traffic by 30% through integrated SEO, social, and email strategy.</li>
-                <li>Improved website functionality, speed, and user experience.</li>
-              </ul>
-            </div>
-            <div class="project-image">
-              <img
-                src="https://static.wixstatic.com/media/3291a4_79f3745840564774b61e1ec4d6614391~mv2.jpg/v1/crop/x_608,y_0,w_1516,h_2049/fill/w_560,h_700,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/img-4484-scaled.jpg"
-                alt="Halo Car Wash"
-                loading="lazy"
-              />
-            </div>
-          </div>
-
-          <!-- 5: Groupe Touchette -->
-          <div class="project-card fade-up">
-            <div class="project-body">
-              <span class="project-industry">Automotive Distribution &amp; Logistics</span>
-              <div class="project-title">Groupe Touchette</div>
-              <span class="project-section-label">Scope of Work</span>
-              <ul>
-                <li>Managed design projects across a portfolio of tire products, including briefing and feedback cycles.</li>
-                <li>Supported product naming and positioning.</li>
-                <li>Led website audit and collaborated on redesign direction to improve SEO and UX.</li>
-              </ul>
-              <span class="project-section-label project-results">Key Results</span>
-              <ul class="project-results">
-                <li>Delivered high-quality creative aligned with brand standards across multiple product lines.</li>
-                <li>Successfully supported product launches and digital improvements.</li>
-              </ul>
-            </div>
-            <div class="project-image">
-              <img
-                src="https://static.wixstatic.com/media/3291a4_e5971bab0ec94c49a0996bae536def04~mv2.jpg/v1/fill/w_560,h_700,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/warehouse-workers.jpg"
-                alt="Groupe Touchette"
-                loading="lazy"
-              />
-            </div>
-          </div>
-
-          <!-- 6: Co-Mate -->
-          <div class="project-card fade-up">
-            <div class="project-body">
-              <span class="project-industry">B2B Product · Chimney Cleaner</span>
-              <div class="project-title">Co-Mate</div>
-              <span class="project-section-label">Scope of Work</span>
-              <ul>
-                <li>Led content strategy across blogs, SEO, and social media.</li>
-                <li>Managed Shopify updates including pricing, promotions, and product positioning.</li>
-                <li>Coordinated LinkedIn and Meta advertising campaigns.</li>
-                <li>Oversaw product labeling updates.</li>
-              </ul>
-              <span class="project-section-label project-results">Key Results</span>
-              <ul class="project-results">
-                <li>Increased U.S. online sales by 22% year-over-year.</li>
-                <li>Grew website traffic by 41%.</li>
-                <li>Generated retailer interest through LinkedIn campaigns, leading to meetings with major retailers.</li>
-                <li>Delivered strong performance during Black Friday campaigns.</li>
-              </ul>
-            </div>
-            <div class="project-image">
-              <img
-                src="https://static.wixstatic.com/media/3291a4_4c7d2fe79e384d999c83bc04b5643e5b~mv2.webp/v1/fill/w_560,h_700,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/CM_Product-Thumbnail_Bottle_Front_large.webp"
-                alt="Co-Mate"
-                loading="lazy"
-              />
-            </div>
-          </div>
-
-          <!-- 7: GS Lighting -->
-          <div class="project-card fade-up">
-            <div class="project-body">
-              <span class="project-industry">Lighting Distribution &amp; Project Solutions</span>
-              <div class="project-title">GS Lighting</div>
-              <span class="project-section-label">Scope of Work</span>
-              <ul>
-                <li>Managed social media and email marketing strategy and execution.</li>
-                <li>Optimized email segmentation to improve targeting, deliverability, and engagement.</li>
-                <li>Coordinated campaign execution via Constant Contact.</li>
-              </ul>
-              <span class="project-section-label project-results">Key Results</span>
-              <ul class="project-results">
-                <li>Increased email open rates from ~20% to 38%.</li>
-                <li>Improved social media engagement and audience growth by 25%.</li>
-              </ul>
-            </div>
-            <div class="project-image">
-              <img
-                src="https://static.wixstatic.com/media/3291a4_36586a59357a4943a68ea14128969c7b~mv2.jpg/v1/crop/x_2,y_0,w_1076,h_1350/fill/w_560,h_700,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/643391806_1557447633050543_6729608712912441763_n.jpg"
-                alt="GS Lighting"
-                loading="lazy"
-              />
-            </div>
-          </div>
-
-          <!-- 8: G.R.E.A.T -->
-          <div class="project-card fade-up">
-            <div class="project-body">
-              <span class="project-industry">Indigenous Training &amp; Workforce Development</span>
-              <div class="project-title">G.R.E.A.T / OSTTC / Kayanase</div>
-              <span class="project-section-label">Scope of Work</span>
-              <ul>
-                <li>Led social media strategy focused on program awareness and registrations.</li>
-                <li>Managed website updates and content direction, including blog strategy.</li>
-                <li>Coordinated annual report design and print materials.</li>
-              </ul>
-              <span class="project-section-label project-results">Key Results</span>
-              <ul class="project-results">
-                <li>Increased social media engagement and audience growth.</li>
-                <li>Improved website traffic and user engagement, leading to increased event registrations.</li>
-              </ul>
-            </div>
-            <div class="project-image">
-              <img
-                src="https://static.wixstatic.com/media/3291a4_5f367167ed7349c8a961a6a3f4d12539~mv2.png/v1/crop/x_0,y_70,w_1024,h_1285/fill/w_560,h_700,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/85ab3867-0653-4334-8d8d-6d84ddc0a0ed.png"
-                alt="G.R.E.A.T / OSTTC / Kayanase"
-                loading="lazy"
-              />
-            </div>
-          </div>
-
-          <!-- 9: Pinevest Homes -->
-          <div class="project-card fade-up">
-            <div class="project-body">
-              <span class="project-industry">Real Estate Development &amp; Home Building</span>
-              <div class="project-title">Pinevest Homes</div>
-              <span class="project-section-label">Scope of Work</span>
-              <ul>
-                <li>Led marketing strategy and campaign planning.</li>
-                <li>Coordinated photography and creative production.</li>
-                <li>Managed website updates and social media.</li>
-                <li>Oversaw digital campaigns with LoKnow.</li>
-                <li>Directed signage and marketing collateral development.</li>
-                <li>Built and executed marketing calendar.</li>
-              </ul>
-              <span class="project-section-label project-results">Key Results</span>
-              <ul class="project-results">
-                <li>Increased awareness and interest in new condo and rental developments.</li>
-                <li>Supported lead generation through integrated marketing efforts.</li>
-              </ul>
-            </div>
-            <div class="project-image">
-              <img
-                src="https://static.wixstatic.com/media/3291a4_91f1ecf010484fde9cf65b1b1c29695e~mv2.jpg/v1/fill/w_560,h_700,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/631872047_1525599396241881_7782754037778749764_n.jpg"
-                alt="Pinevest Homes"
-                loading="lazy"
-              />
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- FOOTER -->
-  <footer>
+<main>
+  <section>
     <div class="container">
-      <div class="footer-inner">
-        <div>
-          <div class="footer-brand">Michael Raffanello</div>
-          <div class="footer-sub">Digital Marketing Specialist · Brantford, ON</div>
-        </div>
-        <div class="footer-contacts">
-          <a href="tel:6475541726">647-554-1726</a>
-          <a href="mailto:michaeljraffanello@gmail.com">michaeljraffanello@gmail.com</a>
-          <a href="https://www.linkedin.com/in/michaelraffanello/" target="_blank" rel="noopener" class="footer-linkedin">
-            <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            LinkedIn
-          </a>
-        </div>
-      </div>
-      <div class="footer-bottom">© 2026 Michael Raffanello. All rights reserved.</div>
-    </div>
-  </footer>
+      <div class="projects-grid">
 
-  <script>
-    function toggleMenu() {
-      document.getElementById('navMobile').classList.toggle('open');
-    }
-  </script>
+        <div class="project-card">
+          <div class="project-body">
+            <span class="project-industry">Non-Profit · Skilled Trades &amp; Workforce Development</span>
+            <div class="project-title">Support Ontario Youth &amp; Tools in the Trades Boot Camp</div>
+            <span class="project-section-label">Scope of Work</span>
+            <ul>
+              <li>Led development and execution of annual marketing strategy aligned with program enrollment goals.</li>
+              <li>Directed social media strategy and community engagement.</li>
+              <li>Partnered with paid influencers to create buzz-worthy content for social media.</li>
+              <li>Built and managed multi-channel media plans (Google, Meta, TV, Radio, Print, OOH).</li>
+              <li>Coordinated content creation including on-site filming and external videographers.</li>
+              <li>Wrote press releases and campaign messaging for events and initiatives.</li>
+              <li>Briefed and directed a 30-second TV campaign from concept through production, including budget management and vendor coordination.</li>
+              <li>Negotiated and managed media buys with Rogers, Bell, and Corus.</li>
+              <li>Implemented tracking strategy using Google Tag Manager (GTM).</li>
+              <li>Owned performance reporting and optimization across all channels.</li>
+            </ul>
+            <span class="project-section-label project-results">Key Results</span>
+            <ul class="project-results">
+              <li>Consistently filled Boot Camp programs through strategic campaign execution.</li>
+              <li>Increased social engagement by 20% through video-led content strategy.</li>
+              <li>Achieved $0.50 CPC on Meta campaigns, outperforming typical non-profit benchmarks.</li>
+              <li>Delivered strong reach and awareness across TV and radio campaigns.</li>
+            </ul>
+          </div>
+          <div class="project-image">
+            <img src="https://static.wixstatic.com/media/3291a4_de54f80acd02413ea6bfa853f88b2307~mv2.jpg/v1/crop/x_2,y_0,w_1076,h_1350/fill/w_560,h_700,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/500816814_1116330537202640_4588127307296552235_n.jpg" alt="Support Ontario Youth" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-body">
+            <span class="project-industry">Electrical Distribution</span>
+            <div class="project-title">RS Breakers and Controls</div>
+            <span class="project-section-label">Scope of Work</span>
+            <ul>
+              <li>Led trade show strategy, planning, and vendor coordination.</li>
+              <li>Briefed and managed design of booth, catalogues (print/digital), and branded assets.</li>
+              <li>Oversaw monthly email marketing and social media strategy.</li>
+              <li>Wrote and scripted TV campaign; supported production and managed media buying.</li>
+              <li>Managed reporting and campaign performance.</li>
+            </ul>
+            <span class="project-section-label project-results">Key Results</span>
+            <ul class="project-results">
+              <li>Achieved ~35% email open rates.</li>
+              <li>Increased LinkedIn engagement and brand visibility by 20%.</li>
+              <li>Improved trade show lead generation by introducing structured sales talk tracks and digital lead capture (iPads).</li>
+              <li>Delivered a high-impact TV campaign that strengthened brand visibility.</li>
+            </ul>
+          </div>
+          <div class="project-image">
+            <img src="https://static.wixstatic.com/media/3291a4_86a7353f69db48c29da1ddcde7f5b83a~mv2.png/v1/crop/x_0,y_29,w_1024,h_1431/fill/w_560,h_700,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/86d7022a-aed0-4459-a5fa-314e20262cdb.png" alt="RS Breakers and Controls" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-body">
+            <span class="project-industry">Manufacturing &amp; Industrial Supply</span>
+            <div class="project-title">Northern Cables</div>
+            <span class="project-section-label">Scope of Work</span>
+            <ul>
+              <li>Led social media and email marketing strategy.</li>
+              <li>Planned and coordinated trade show and print initiatives.</li>
+              <li>Managed vendor relationships (Kerwill, Electrical Business Magazine, Wesco) to position products with target buyers.</li>
+              <li>Directed Canadian Made and Clean Aluminum campaigns.</li>
+              <li>Oversaw production of educational video content supporting customer portal adoption.</li>
+            </ul>
+            <span class="project-section-label project-results">Key Results</span>
+            <ul class="project-results">
+              <li>Increased LinkedIn engagement by 30% through targeted content strategy.</li>
+              <li>Achieved ~35% email open rates.</li>
+              <li>Surpassed industry benchmarks on the Clean Aluminum campaign using LoKnow's RainBarrel targeting.</li>
+            </ul>
+          </div>
+          <div class="project-image">
+            <img src="https://static.wixstatic.com/media/3291a4_9063c298f98a4010aca5bab2d7482386~mv2.jpeg/v1/crop/x_1,y_0,w_797,h_1000/fill/w_560,h_700,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/1776360605504.jpeg" alt="Northern Cables" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-body">
+            <span class="project-industry">Automotive Service</span>
+            <div class="project-title">Halo Car Wash</div>
+            <span class="project-section-label">Scope of Work</span>
+            <ul>
+              <li>Led social media strategy and coordinated content execution across Instagram, Facebook, Google My Business, and LinkedIn.</li>
+              <li>Developed strategy and copy for a 10-email automated onboarding campaign in Mailchimp, including promotional offers and review-driving flows.</li>
+              <li>Collaborated with design team on in-store print materials promoting memberships, seasonal offers, and product campaigns.</li>
+              <li>Managed website updates including membership flows, UX improvements, and content.</li>
+            </ul>
+            <span class="project-section-label project-results">Key Results</span>
+            <ul class="project-results">
+              <li>Achieved 30–45% email open rates across campaigns.</li>
+              <li>Increased Instagram following by 20%.</li>
+              <li>Grew website traffic by 30% through integrated SEO, social, and email strategy.</li>
+              <li>Improved website functionality, speed, and user experience.</li>
+            </ul>
+          </div>
+          <div class="project-image">
+            <img src="https://static.wixstatic.com/media/3291a4_79f3745840564774b61e1ec4d6614391~mv2.jpg/v1/crop/x_608,y_0,w_1516,h_2049/fill/w_560,h_700,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/img-4484-scaled.jpg" alt="Halo Car Wash" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-body">
+            <span class="project-industry">Automotive Distribution &amp; Logistics</span>
+            <div class="project-title">Groupe Touchette</div>
+            <span class="project-section-label">Scope of Work</span>
+            <ul>
+              <li>Managed design projects across a portfolio of tire products, including briefing and feedback cycles.</li>
+              <li>Supported product naming and positioning.</li>
+              <li>Led website audit and collaborated on redesign direction to improve SEO and UX.</li>
+            </ul>
+            <span class="project-section-label project-results">Key Results</span>
+            <ul class="project-results">
+              <li>Delivered high-quality creative aligned with brand standards across multiple product lines.</li>
+              <li>Successfully supported product launches and digital improvements.</li>
+            </ul>
+          </div>
+          <div class="project-image">
+            <img src="https://static.wixstatic.com/media/3291a4_e5971bab0ec94c49a0996bae536def04~mv2.jpg/v1/fill/w_560,h_700,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/warehouse-workers.jpg" alt="Groupe Touchette" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-body">
+            <span class="project-industry">B2B Product · Chimney Cleaner</span>
+            <div class="project-title">Co-Mate</div>
+            <span class="project-section-label">Scope of Work</span>
+            <ul>
+              <li>Led content strategy across blogs, SEO, and social media.</li>
+              <li>Managed Shopify updates including pricing, promotions, and product positioning.</li>
+              <li>Coordinated LinkedIn and Meta advertising campaigns.</li>
+              <li>Oversaw product labeling updates.</li>
+            </ul>
+            <span class="project-section-label project-results">Key Results</span>
+            <ul class="project-results">
+              <li>Increased U.S. online sales by 22% year-over-year.</li>
+              <li>Grew website traffic by 41%.</li>
+              <li>Generated retailer interest through LinkedIn campaigns, leading to meetings with major retailers.</li>
+              <li>Delivered strong performance during Black Friday campaigns.</li>
+            </ul>
+          </div>
+          <div class="project-image">
+            <img src="https://static.wixstatic.com/media/3291a4_4c7d2fe79e384d999c83bc04b5643e5b~mv2.webp/v1/fill/w_560,h_700,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/CM_Product-Thumbnail_Bottle_Front_large.webp" alt="Co-Mate" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-body">
+            <span class="project-industry">Lighting Distribution &amp; Project Solutions</span>
+            <div class="project-title">GS Lighting</div>
+            <span class="project-section-label">Scope of Work</span>
+            <ul>
+              <li>Managed social media and email marketing strategy and execution.</li>
+              <li>Optimized email segmentation to improve targeting, deliverability, and engagement.</li>
+              <li>Coordinated campaign execution via Constant Contact.</li>
+            </ul>
+            <span class="project-section-label project-results">Key Results</span>
+            <ul class="project-results">
+              <li>Increased email open rates from ~20% to 38%.</li>
+              <li>Improved social media engagement and audience growth by 25%.</li>
+            </ul>
+          </div>
+          <div class="project-image">
+            <img src="https://static.wixstatic.com/media/3291a4_36586a59357a4943a68ea14128969c7b~mv2.jpg/v1/crop/x_2,y_0,w_1076,h_1350/fill/w_560,h_700,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/643391806_1557447633050543_6729608712912441763_n.jpg" alt="GS Lighting" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-body">
+            <span class="project-industry">Indigenous Training &amp; Workforce Development</span>
+            <div class="project-title">G.R.E.A.T / OSTTC / Kayanase</div>
+            <span class="project-section-label">Scope of Work</span>
+            <ul>
+              <li>Led social media strategy focused on program awareness and registrations.</li>
+              <li>Managed website updates and content direction, including blog strategy.</li>
+              <li>Coordinated annual report design and print materials.</li>
+            </ul>
+            <span class="project-section-label project-results">Key Results</span>
+            <ul class="project-results">
+              <li>Increased social media engagement and audience growth.</li>
+              <li>Improved website traffic and user engagement, leading to increased event registrations.</li>
+            </ul>
+          </div>
+          <div class="project-image">
+            <img src="https://static.wixstatic.com/media/3291a4_5f367167ed7349c8a961a6a3f4d12539~mv2.png/v1/crop/x_0,y_70,w_1024,h_1285/fill/w_560,h_700,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/85ab3867-0653-4334-8d8d-6d84ddc0a0ed.png" alt="G.R.E.A.T / OSTTC / Kayanase" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-body">
+            <span class="project-industry">Real Estate Development &amp; Home Building</span>
+            <div class="project-title">Pinevest Homes</div>
+            <span class="project-section-label">Scope of Work</span>
+            <ul>
+              <li>Led marketing strategy and campaign planning.</li>
+              <li>Coordinated photography and creative production.</li>
+              <li>Managed website updates and social media.</li>
+              <li>Oversaw digital campaigns with LoKnow.</li>
+              <li>Directed signage and marketing collateral development.</li>
+              <li>Built and executed marketing calendar.</li>
+            </ul>
+            <span class="project-section-label project-results">Key Results</span>
+            <ul class="project-results">
+              <li>Increased awareness and interest in new condo and rental developments.</li>
+              <li>Supported lead generation through integrated marketing efforts.</li>
+            </ul>
+          </div>
+          <div class="project-image">
+            <img src="https://static.wixstatic.com/media/3291a4_91f1ecf010484fde9cf65b1b1c29695e~mv2.jpg/v1/fill/w_560,h_700,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/631872047_1525599396241881_7782754037778749764_n.jpg" alt="Pinevest Homes" loading="lazy" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">Michael Raffanello</div>
+        <div class="footer-sub">Digital Marketing Specialist · Brantford, ON</div>
+      </div>
+      <div class="footer-contacts">
+        <a href="tel:6475541726">647-554-1726</a>
+        <a href="mailto:michaeljraffanello@gmail.com">michaeljraffanello@gmail.com</a>
+        <a href="https://www.linkedin.com/in/michaelraffanello/" target="_blank" rel="noopener" class="linkedin-link">
+          <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Michael Raffanello. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() { document.getElementById('navMobile').classList.toggle('open'); }
+</script>
 </body>
 </html>
