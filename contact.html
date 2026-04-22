@@ -74,8 +74,7 @@
 
       <div class="contact-form-card fade-up-item" style="animation-delay:0.12s">
         <h3>Send a Message</h3>
-        <!-- Replace YOUR_FORM_ID with a Formspree endpoint after signing up at formspree.io -->
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <form id="contactForm">
           <div class="form-row">
             <div class="form-group">
               <label for="fname">First Name *</label>
@@ -96,9 +95,15 @@
           </div>
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Tell me more…"></textarea>
+            <textarea id="message" name="message" placeholder="Tell me more..."></textarea>
           </div>
-          <button type="submit" class="btn btn-primary form-submit">Send Message →</button>
+          <button type="submit" id="submitBtn" class="btn btn-primary form-submit">Send Message</button>
+          <div id="formSuccess" style="display:none; margin-top:1rem; padding:1rem 1.25rem; background:#f0fdf4; border-left:2.5px solid #16a34a; border-radius:0 8px 8px 0; font-size:0.9rem; color:#15803d;">
+            Thanks for reaching out — Michael will be in touch soon!
+          </div>
+          <div id="formError" style="display:none; margin-top:1rem; padding:1rem 1.25rem; background:#fef2f2; border-left:2.5px solid #dc2626; border-radius:0 8px 8px 0; font-size:0.9rem; color:#dc2626;">
+            Something went wrong. Please try again or email directly at michaeljraffanello@gmail.com.
+          </div>
         </form>
       </div>
 
@@ -128,6 +133,40 @@
 
 <script>
   function toggleMenu() { document.getElementById('navMobile').classList.toggle('open'); }
+
+  document.getElementById('contactForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const btn = document.getElementById('submitBtn');
+    const success = document.getElementById('formSuccess');
+    const error = document.getElementById('formError');
+
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+    success.style.display = 'none';
+    error.style.display = 'none';
+
+    const data = new FormData(this);
+
+    try {
+      const res = await fetch('https://formspree.io/f/meevpjvp', {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (res.ok) {
+        success.style.display = 'block';
+        this.reset();
+        btn.textContent = 'Sent!';
+      } else {
+        throw new Error('Failed');
+      }
+    } catch {
+      error.style.display = 'block';
+      btn.textContent = 'Send Message';
+      btn.disabled = false;
+    }
+  });
 </script>
 </body>
 </html>
